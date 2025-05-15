@@ -1,16 +1,32 @@
-# Compteur de mots en Java
+# Jeu de Devinette en Java
 
-Ce projet Java lit un fichier texte et compte le **nombre total de mots** qu'il contient.
+Ce programme est un simple jeu de devinette développé en Java. L'utilisateur doit deviner un nombre aléatoire entre 1 et 100 en un maximum de 10 essais.
 
-## Fichiers inclus
+## Fonctionnalités
 
-- `CompteurDeMots.java` : le code source
-- `montexte.txt` : fichier texte de test
+- Génération aléatoire d'un nombre entre 1 et 100
+- Jusqu'à 10 essais pour deviner le bon nombre
+- Indication si la proposition est trop grande ou trop petite
+- Vérification de la validité de l'entrée utilisateur
+- Affichage du résultat final (victoire ou échec)
 
-## Exécution
+## Prérequis
 
-### Lancer le projet :
+- Java Development Kit (JDK) installé (version 17 ou supérieure)
+- Un terminal ou un IDE comme IntelliJ IDEA, Eclipse, NetBeans, etc.
+
+## Compilation
+
+Pour compiler le programme, ouvrez un terminal dans le répertoire contenant le fichier `JeuDivinette.java` et exécutez la commande suivante :
+
 ```bash
-javac CompteurDeMots.java
-java CompteurDeMots
+javac JeuDivinette.java
+```
+
+## Execution
+```bash
+java JeuDivinette
+```
+
+
 
