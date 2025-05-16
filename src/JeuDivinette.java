@@ -1,5 +1,6 @@
 import java.util.Random;
 import java.util.Scanner;
+import java.util.InputMismatchException;
 
 public class JeuDivinette {
     public static void main(String[] args) {
@@ -24,6 +25,7 @@ public class JeuDivinette {
                continue;
 
             }
+            try {
 
             int nbrUser = scan.nextInt();
             essais++;
@@ -37,7 +39,13 @@ public class JeuDivinette {
                 trouve = true;
                 break;
             }
+
+        } catch (InputMismatchException e) {
+            System.out.println("Veuillez entrer un nombre entier valide !");
+            scan.next(); // Nettoyer l'entrée invalide
         }
+        }
+
 
         if (!trouve) {
             System.out.println("Vous avez utilisé vos 10 essais. Le nombre était : " + nbrSecret);
@@ -46,3 +54,4 @@ public class JeuDivinette {
         scan.close();
     }
 }
+
